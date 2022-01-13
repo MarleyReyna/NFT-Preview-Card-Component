@@ -12,8 +12,11 @@ const Card = () => {
     return (
         <main className='card'>
             <div className='img-container'>
-                <img src={mainImg} alt='' className='img-main'/>
-                <img src={eye} alt='' className='eye'/>
+                <img src={mainImg} 
+                alt='' 
+                aria-hidden='true' 
+                className='img-main'/>
+                <img src={eye} alt='' aria-hidden='true' className='eye'/>
             </div>
             <h1>Equilibrium #3429</h1>
             <p>
@@ -22,16 +25,16 @@ const Card = () => {
             </p>
             <div className='nft-info'>
                 <p className='eth'>
-                    <img src={ethLogo} alt=''/>0.041 ETH
+                    <img src={ethLogo} alt='' aria-hidden='true' />0.041 ETH
                 </p>
                 <p className='time'>
-                    <img src={clock} alt=''/>3 days left
+                    <img src={clock} alt='' aria-hidden='true' />3 days left
                 </p>
             </div>
             <div className='line' />
             <div className='user'>
                 <div>
-                    <img src={avatar} alt=''></img>
+                    <img src={avatar} alt='' aria-hidden='true' ></img>
                 </div>
                 <p>Creation of <span>Jules Wyvern</span></p>
             </div>
